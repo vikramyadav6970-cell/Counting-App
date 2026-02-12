@@ -1,0 +1,48 @@
+#heading h1{
+    text-align: center;
+    color: rgb(5, 49, 94);
+    font-size: 60px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.4;   
+    z-index: -1;
+}
+
+
+#heading h2{
+    text-align: center;
+    color: rgb(147, 17, 8);
+    font-size: 60px;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(245, 159, 10);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
