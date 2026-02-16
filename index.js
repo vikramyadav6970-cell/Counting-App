@@ -1,7 +1,12 @@
-let count=0;
-document.getElementById("countp").innerText = count
-document.getElementById("incre").addEventListener("click",increment)
+let count=0
+
+let countp=document.getElementById("countp")
+
+let button=document.getElementById("button")
+
 function increment(){
-    count++;
-    document.getElementById("countp").innerText = count
+    count++
+    countp.innerHTML=count
 }
+
+button.addEventListener("click",increment)
